@@ -1,25 +1,23 @@
-/*alert("Bienvenue sur la page d'acceuil du site du turfu")
-x=10
-y=prompt("entrer un nombre")
-document.write(x)
-if (y>x){
-	document.write(" <center><h1>OUVRE</center></h1>")
+/*javascript*/
+var=t
+t=0
+/*fixe le prix a 30 euros je pense*/
+function ajout():{
+	if(t=>30):{
+		t=t-30
+		alert("Nous allons vous dirigez vers la page pour payer")
+	};
+	if(t<30):{
+		alert("Vous n'avez pas assez de tokens veulliez ressayer plus tard")
+	}
 }
-else{
-	document.write("<center><h1>FERME</center></h1>")
-}*/
-x=prompt("entrer un nombre pour x")
-y=prompt("entrer un nombre pour y")
-/*while (y<x){
-	y=y+1
+/*fixe le prix a 40 euros je pense*/
+function second():{
+	if(t=>40):{
+		alert("Nous allons vous dirigez vers la page pour payer")
+		t=t-40
+	};
+	if(t<40):{
+		alert("Vous n'avez pas assez de tokens veulliez ressayer plus tard")
+	}
 }
-alert("maintenant y est égale à x")*/
-/*for (var i=0; i<6; i=i+1){
-	alert("La valeur de i est"+i)
-}*/
-function perimetre(R){
-	p=2*3.14*R
-	return p
-}
-r=prompt("entrer une valeur de rayon : ")
-document.write(perimetre(r))
