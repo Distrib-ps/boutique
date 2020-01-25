@@ -34,18 +34,3 @@ setTimeout(() => {
     loader.fadeOut(500);
     main.fadeIn(500)
 }, 500)
-function deco(){
-  delete_cookie("DiscordToken")
-}
-function delete_cookie(name) {
-  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-}
-function checkProfile(url){
-  if (url.includes("profile")){
-    let pp1 = document.getElementById("pp2")
-      pp1.srcset = "https://cdn.discordapp.com/avatars/"+UserData.id+"/"+UserData.avatar
-      let name = document.getElementById("profilename")
-      name.innerHTML = UserData.username
-  }
-}
-const socket = io("https://marketpala.glitch.me")
