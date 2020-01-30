@@ -6,7 +6,8 @@ var prix;
 var UserData;
 var quantitee;
 function nbrandom(length) {
-   var resultat           = '';
+/* Cette fonction sert à donner un code aléatoire à l'achat d'un item
+*/   var resultat           = '';
    var ch       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
    var chlength = ch.length;
    for ( var i = 0; i < length; i++ ) {
@@ -15,6 +16,8 @@ function nbrandom(length) {
    return resultat;
 }
 function createItem(displayname, imageSRC, nom, description, buyable, max){
+    /* Cette fonction sert à afficher la case avec kle nom, l'img, la desc, le prix, et l'achat maximum d'objet
+*/ 
     let box = document.createElement("div");
     box.className = "item";
     shop.appendChild(box);
@@ -161,7 +164,7 @@ micheline.click(function(event){
     Swal.fire({// Ont a utilisé --> https://lipis.github.io/bootstrap-sweetalert/
   icon: 'success',
   title: 'Achat(s) Validé !',
-  text: 'Merci de votre confiance ! En espérent que nos services soit toujours au top ! Maintenant pour finaliser l\'achat, merci de suivre les consignes suivantes: 1- Envoyez un mail à delhay70@gmail.com en donnant le code d\'achat suivant:  '+nbrandom(10)+'  2- Dès que vous avez envoyé l\'email, vous devez patienter jusqu\'à 24 heures.Pour toutes autre question merci de vous rediriger sur l\'espace d\'aide.',
+  text: 'Merci de votre confiance ! En espérant que nos services soit toujours au top ! Maintenant pour finaliser l\'achat, merci de suivre les consignes suivantes: 1- Envoyez un mail à delhay70@gmail.com en donnant le code d\'achat suivant:  '+nbrandom(10)+'  2- Dès que vous avez envoyé l\'email, vous devez patienter jusqu\'à 24 heures.Pour toutes autre question merci de vous rediriger sur l\'espace d\'aide.',
   footer: '<a href="../index.html">Revenir à l\'acceuil.</a>',
       timer: 1000000
 })
