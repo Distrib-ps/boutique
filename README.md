@@ -1,4 +1,4 @@
-# boutique
+# BernardShop
 L'index contient la page principal
 Le dossier Media a les images qui sont utilisé
 
