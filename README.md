@@ -17,4 +17,3 @@ Le dossier Media a les images qui sont utilisé
   other.css - Pour les autres pages
   
   /!\ Le css a aussi était fait avec: Webkit & Boostrap.
-  
